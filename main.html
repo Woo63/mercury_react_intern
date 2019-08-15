@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <link href="style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+</head>
+<body>
+    <img id="logo" srcset="img/w-mercury-development.png 210w,
+                 img/w-mercury-development2x.png 420w,
+                 img/w-mercury-development3x.png 630w"
+         sizes="(max-width: 800px) 182px,
+                 315px"
+         src="img/w-mercury-development3x.png">
+    <form id="form">
+        <h1>Log in</h1>
+        <input type="email" placeholder="E-mail" id="email">
+        <input type="password" placeholder="Password" id="password">
+        <span id="warning">E-mail or password is incorrect</span>
+        <button class="form_button" type="submit">Login</button>
+    </form>
+    <script src="index.js">
+    </script>
+</body>
+</html>

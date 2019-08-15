@@ -1,0 +1,154 @@
+@font-face {
+    font-family: Gotham;
+    src: url("font/GothamMedium.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0 none;
+    outline: none;
+    font-family: Gotham;
+}
+
+body {
+    background: url("img/background.png");
+}
+
+#logo {
+    display: block;
+    margin: 141px auto 125px;
+    position: relative;
+    right: 14.5px;
+}
+
+h1 {
+    letter-spacing: 0.2px;
+    opacity: 0.8;
+    font-size: 24px;
+    color: #262626;
+    padding-bottom: 48px;
+}
+
+#form {
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    width: 600px;
+    margin: 0 auto;
+    padding-top: 48px;
+}
+
+input {
+    border-radius: 4px;
+    padding: 14px 16px;
+    width: 504px;
+    margin-bottom: 32px;
+    background-color: #f1f1f1;
+    font-size: 16px;
+    color: #262626;
+}
+
+input::placeholder {
+    opacity: 0.4;
+}
+
+input:focus {
+    border: solid 1px rgba(151, 151, 151, 0.25);
+    opacity: 0.8;
+}
+
+.form_button {
+    padding: 16px 32px;
+    color: #ffffff;
+    border-radius: 100px;
+    background-color: #ed4159;
+    box-shadow: 0 4px 16px 0 rgba(237, 65, 89, 0.4);
+    font-size: 14px;
+    font-weight: 500;
+    margin: 16px auto 60px;
+}
+
+.form_button:hover {
+    box-shadow: 0 6px 20px 0 rgba(237, 65, 89, 0.4);
+    background-color: #ffffff;
+    color: #ed4159;
+}
+
+.form_button:active {
+    box-shadow: 0 2px 10px 0 rgba(237, 65, 89, 0.5);
+    background-color: #ffffff;
+    color: #ed4159;
+}
+
+#warning {
+    display: none;
+    width: 504px;
+    padding: 11px 16px 9px;
+    background-color: rgba(237, 65, 89, 0.25);
+    border-radius: 4px;
+    color: #ed4159;
+    font-size: 14px;
+    text-align: left;
+    margin: 0 auto 32px;
+}
+
+#avatar {
+    width: 128px;
+    height: 128px;
+    border: solid 1px #979797;
+    border-radius: 100%;
+}
+
+#userName {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 0.23px;
+    text-align: center;
+    color: #262626;
+    margin: 40px 0;
+}
+
+@media screen and (max-width: 800px) {
+    #logo {
+        margin: 43px auto 37px;
+        right: 2px;
+    }
+
+    h1 {
+        padding-bottom: 32px;
+        font-size: 20px;
+        letter-spacing: normal;
+    }
+
+    #form {
+        padding-top: 32px;
+        width: 288px;
+    }
+
+    input, #warning {
+        width: 240px;
+        margin-bottom: 24px;
+    }
+
+    #warning {
+        font-size: 12px;
+        padding: 12px 14px 8px;
+    }
+
+    #avatar {
+        width: 86px;
+        height: 86px;
+    }
+
+    #userName {
+        font-size: 18px;
+        margin: 24px 0;
+        letter-spacing: 0.15px;
+    }
+
+    .form_button {
+        margin-bottom: 48px;
+    }
+}
