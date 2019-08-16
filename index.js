@@ -7,9 +7,11 @@ form.onsubmit = function (e) {
     var xhr = new XMLHttpRequest();
     xhr.open("POST", 'https://us-central1-mercdev-academy.cloudfunctions.net/login', true);
     xhr.setRequestHeader('Content-Type', 'application/json');
-    xhr.onload = function () {
+    xhr.onreadystatechange = function () {
+        if(xhr.readyState !== 4)
+            return;
         var res = JSON.parse(xhr.responseText);
-        if (res.error == "Invalid email or password") {
+        if (res.error) {
             document.getElementById("email").style.border = 'solid 1px #ed4159';
             document.getElementById("email").style.color = '#ed4159';
             document.getElementById("warning").style.display = 'block';

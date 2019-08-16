@@ -22,7 +22,6 @@ body {
     position: relative;
     right: 14.5px;
 }
-
 h1 {
     letter-spacing: 0.2px;
     opacity: 0.8;
@@ -36,7 +35,7 @@ h1 {
     background-color: #ffffff;
     border-radius: 8px;
     width: 600px;
-    margin: 0 auto;
+    margin: 0 auto 20px;
     padding-top: 48px;
 }
 
@@ -110,7 +109,7 @@ input:focus {
     margin: 40px 0;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 620px) {
     #logo {
         margin: 43px auto 37px;
         right: 2px;
@@ -150,5 +149,10 @@ input:focus {
 
     .form_button {
         margin-bottom: 48px;
+    }
+}
+@media screen and (min-width: 1920px) {
+    body {
+        background-size: cover;
     }
 }
