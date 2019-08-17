@@ -8,7 +8,7 @@ form.onsubmit = function (e) {
     xhr.open("POST", 'https://us-central1-mercdev-academy.cloudfunctions.net/login', true);
     xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.onreadystatechange = function () {
-        if(xhr.readyState !== 4)
+        if (xhr.readyState !== 4)
             return;
         var res = JSON.parse(xhr.responseText);
         if (res.error) {
@@ -33,7 +33,7 @@ form.onsubmit = function (e) {
             div.append(photo);
             div.append(name);
             div.append(button_out);
-            document.body.appendChild(div);
+            container.append(div);
         }
     };
     xhr.send(JSON.stringify(body));
