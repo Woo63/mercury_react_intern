@@ -26,6 +26,7 @@ body {
     position: relative;
     right: 14.5px;
     margin: 141px auto 125px;
+    width: 315px;/*IE*/
 
 }
 
@@ -37,6 +38,7 @@ body {
     margin-bottom: 20px;
     padding-top: 48px;
     width: 100%;
+    text-align: center;/*IE*/
 }
 
 h1 {
@@ -59,6 +61,7 @@ input {
 
 input::placeholder {
     opacity: 0.4;
+    color: #262626;
 }
 
 input:focus {
@@ -75,6 +78,7 @@ input:focus {
     font-size: 14px;
     font-weight: 500;
     margin: 16px 0 60px;
+    transition: background-color 0.3s;
 }
 
 .form_button:hover {
@@ -98,8 +102,9 @@ input:focus {
     color: #ed4159;
     font-size: 14px;
     text-align: left;
-    margin-bottom: 32px;
+    margin: 0 auto 32px;
 }
+
 
 #avatar {
     width: 128px;
@@ -124,6 +129,7 @@ input:focus {
     #logo {
         margin: 43px auto 37px;
         right: 2px;
+        width: 182px;/*IE*/
     }
 
     h1 {
