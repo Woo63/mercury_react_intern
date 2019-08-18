@@ -54,7 +54,7 @@ input {
     padding: 14px 16px;
     width: 504px;
     margin-bottom: 32px;
-    background-color: rgb(241, 241, 241) !important;
+    background-color: rgb(241, 241, 241);
     font-size: 16px;
     color: #262626;
     opacity: 0.8;
@@ -70,7 +70,7 @@ input:focus {
 }
 
 input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0px 10em white inset !important;
+    -webkit-box-shadow: 0 0 0px 10em rgb(241, 241, 241) inset !important;
     -webkit-text-fill-color: #262626 !important;
 }
 
